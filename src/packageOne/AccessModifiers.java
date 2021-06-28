@@ -1,3 +1,7 @@
+package packageOne;
+
+import defau.Person;
+import packageTwo.ProtectedSubClass;
 
 public class AccessModifiers {
 
@@ -6,6 +10,9 @@ public class AccessModifiers {
 		adam.age = 25;
 		
 		System.out.println("Age: " + adam.age);
+		
+		ProtectedSubClass psc = new ProtectedSubClass();
+		psc.printID();
 	}
 
 }
